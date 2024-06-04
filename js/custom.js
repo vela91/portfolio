@@ -51,15 +51,15 @@ $(function () {
   });
 
   /*========== Start Magnigic Popup Js ==========*/
-  //   if ($(".portfolio-content .item")[0]) {
-  //     $(".portfolio-content .item").magnificPopup({
-  //       delegate: ".icon-img",
-  //       type: "image",
-  //       gallery: {
-  //         enabled: true,
-  //       },
-  //     });
-  //   }
+  if ($(".portfolio-content .item")[0]) {
+    $(".portfolio-content .item").magnificPopup({
+      delegate: ".icon-img",
+      type: "image",
+      gallery: {
+        enabled: true,
+      },
+    });
+  }
 
   /*========== Owl Carousel Js Testimonial  ==========*/
   $(".testimonials .owl-carousel").owlCarousel({
@@ -81,23 +81,23 @@ $(function () {
   });
 
   /*========== Owl Carousel Js Blog  ==========*/
-  $(".blog .owl-carousel").owlCarousel({
-    items: 2,
-    autoplay: true,
-    smartSpeed: 500,
-    margin: 30,
-    loop: true,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      991: {
-        items: 2,
-      },
-    },
-  });
+  // $(".blog .owl-carousel").owlCarousel({
+  //   items: 2,
+  //   autoplay: true,
+  //   smartSpeed: 500,
+  //   margin: 30,
+  //   loop: true,
+  //   autoplayHoverPause: true,
+  //   responsiveClass: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     991: {
+  //       items: 2,
+  //     },
+  //   },
+  // });
 
   /*========== Ajax Contact Form  ==========*/
   $(".contact-form").on("submit", function () {
