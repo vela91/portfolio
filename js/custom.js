@@ -100,33 +100,47 @@ $(function () {
   // });
 
   /*========== Ajax Contact Form  ==========*/
-  $(".contact-form").on("submit", function () {
-    var myForm = $(this),
-      data = {};
 
-    myForm.find("[name]").each(function () {
-      var that = $(this),
-        name = that.attr("name"),
-        value = that.val();
+  // code fragment
+  // the form id is myForm
+  $("#myForm").on("submit", function (event) {
+    event.preventDefault(); // prevent reload
 
-      data[name] = value;
-    });
+    var formData = new FormData(this);
+    formData.append("service_id", "service_1li5wnx");
+    formData.append("template_id", "template_73u0g0r");
+    formData.append("user_id", "template_73u0g0r");
 
-    $.ajax({
-      url: myForm.attr("action"),
-      type: myForm.attr("method"),
-      data: data,
-      success: function (response) {
-        if (response == "success") {
-          $(".contact-form").find(".form-message").addClass("success");
-          $(".form-message span").text("Message Sent!");
-        } else {
-          $(".contact-form").find(".form-message").addClass("error");
-          $(".form-message span").text("Error Sending!");
-        }
-      },
-    });
-
-    return false;
+    $.ajax("https://api.emailjs.com/api/v1.0/email/send-form", {
+      type: "POST",
+      data: formData,
+      contentType: false, // auto-detection
+      processData: false, // no need to parse formData to string
+    })
+      .done(function () {
+        alert("Your mail is sent!");
+      })
+      .fail(function (error) {
+        alert("Oops... " + JSON.stringify(error));
+      });
   });
+  window.onload = function () {
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm("service_1li5wnx", "template_73u0g0r", this).then(
+          () => {
+            $(".contact-form").find(".form-message").addClass("success");
+            $(".form-message span").text("Message Sent!");
+            document.getElementById("contact-form").reset();
+          },
+          (error) => {
+            $(".contact-form").find(".form-message").addClass("error");
+            $(".form-message span").text("Error Sending!");
+          }
+        );
+      });
+  };
 });

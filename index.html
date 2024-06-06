@@ -35,6 +35,16 @@
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			// https://dashboard.emailjs.com/admin/account
+			emailjs.init({
+				publicKey: "t-gHncZPRi_EzybhA",
+			});
+		})();
+	</script>
+
 
 </head>
 
@@ -52,7 +62,7 @@
 					<span class="bar"></span>
 				</button>
 				<!-- logo -->
-				<a class="navbar-brand" href="#"><span>j</span>vela</a>
+				<a class="navbar-brand" href="/"><span>j</span>vela</a>
 			</div>
 			<!-- Collect the nav links, and other content for toggling -->
 			<div class="navbar-links" id="ournavbar">
@@ -64,8 +74,10 @@
 					<li><a data-menuanchor="services" href="#services"><i class="fa fa-tasks"></i>Services</a></li>
 					<li><a data-menuanchor="resume" href="#resume"><i class="fa fa-graduation-cap"></i>Resume</a></li>
 					<li><a data-menuanchor="portfolio" href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+					<li><a data-menuanchor="testimonials" href="#testimonials"><i class="fa fa-briefcase"></i>Testimonials</a>
+					</li>
 					<!-- <li><a data-menuanchor="blog" href="#blog"><i class="fa fa-newspaper-o"></i>Blog</a></li> -->
-					<!-- <li><a data-menuanchor="contact" href="#contact"><i class="fa fa-map-marker"></i>Contact</a></li> -->
+					<li><a data-menuanchor="contact" href="#contact"><i class="fa fa-map-marker"></i>Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -85,11 +97,11 @@
 							<h1>Jose Vela</h1>
 							<p>I'm a <span></span></p>
 							<div class="my-btn">
-								<!-- <a href="#" class="main-btn custom-btn">Hire Me</a> -->
+								<a href="#contact" class="main-btn custom-btn">Contact Me</a>
 								<a href="/assets/Professional CV Resume.pdf" class="main-btn" target="_blank">Download CV</a>
 							</div>
 						</div>
-						<ul class="list-unstyled">
+						<ul class="list-unstyled text-left">
 							<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
 							<li><a href="https://www.linkedin.com/in/jose-vela-333244181/"><i class="fa fa-linkedin"></i></a></li>
 
@@ -338,7 +350,7 @@
 
 		<!-- ========== Start Portfolio ========== -->
 
-		<section class="portfolio section pp-scrollable d-none" id="portfolio">
+		<section class="portfolio section pp-scrollable" id="portfolio">
 			<div class="container">
 				<div class="main-title">
 					<h2>My Portfolio</h2>
@@ -514,120 +526,120 @@
 
 		<!-- ========== Start Blog ========== -->
 
-		<!-- <section class="blog section pp-scrollable" id="blog"> -->
-		<div class="container">
-			<div class="main-title">
-				<h2>My Blog</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-12 owl-carousel owl-theme">
+		<!-- <section class="blog section " id="blog">
+			<!-- <div class="container">
+				<div class="main-title">
+					<h2>My Blog</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 owl-carousel owl-theme">
 
-					<div class="post">
-						<div class="post-img">
-							<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
-							<div class="post-category">
-								<a href="#">JavaScript</a>
+						<div class="post">
+							<div class="post-img">
+								<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
+								<div class="post-category">
+									<a href="#">JavaScript</a>
+								</div>
+							</div>
+							<div class="post-content">
+								<div class="post-title">
+									<a href="#">
+										<h4>Heap and manage storage JavaScript</h4>
+									</a>
+								</div>
+								<ul class="post-info list-unstyled">
+									<li>
+										<i class="fa fa-calendar"></i>
+										<span>20 Apr 23</span>
+									</li>
+									<li>
+										<i class="fa fa-commenting-o"></i>
+										<a href="#"><span>7 Comment</span></a>
+									</li>
+								</ul>
+								<div class="post-text">
+									<p>La gestión de memoria varía significativamente entre los distintos lenguajes de programación. En
+										los lenguajes de bajo
+										nivel como *C* o *C++*, los programadores deben gestionarla manualmente.
+										....</p>
+								</div>
+								<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
 							</div>
 						</div>
-						<div class="post-content">
-							<div class="post-title">
-								<a href="#">
-									<h4>Heap and manage storage JavaScript</h4>
-								</a>
-							</div>
-							<ul class="post-info list-unstyled">
-								<li>
-									<i class="fa fa-calendar"></i>
-									<span>20 Apr 23</span>
-								</li>
-								<li>
-									<i class="fa fa-commenting-o"></i>
-									<a href="#"><span>7 Comment</span></a>
-								</li>
-							</ul>
-							<div class="post-text">
-								<p>La gestión de memoria varía significativamente entre los distintos lenguajes de programación. En
-									los lenguajes de bajo
-									nivel como *C* o *C++*, los programadores deben gestionarla manualmente.
-									....</p>
-							</div>
-							<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
-						</div>
-					</div>
 
-					<div class="post">
-						<div class="post-img">
-							<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
-							<div class="post-category">
-								<a href="#">Logo</a>
+						<div class="post">
+							<div class="post-img">
+								<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
+								<div class="post-category">
+									<a href="#">Logo</a>
+								</div>
+							</div>
+							<div class="post-content">
+								<div class="post-title">
+									<a href="#">
+										<h4>Post Title Goes Here</h4>
+									</a>
+								</div>
+								<ul class="post-info list-unstyled">
+									<li>
+										<i class="fa fa-calendar"></i>
+										<span>23 July 19</span>
+									</li>
+									<li>
+										<i class="fa fa-commenting-o"></i>
+										<a href="#"><span>6 Comment</span></a>
+									</li>
+								</ul>
+								<div class="post-text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+										nisi ut...</p>
+								</div>
+								<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
 							</div>
 						</div>
-						<div class="post-content">
-							<div class="post-title">
-								<a href="#">
-									<h4>Post Title Goes Here</h4>
-								</a>
-							</div>
-							<ul class="post-info list-unstyled">
-								<li>
-									<i class="fa fa-calendar"></i>
-									<span>23 July 19</span>
-								</li>
-								<li>
-									<i class="fa fa-commenting-o"></i>
-									<a href="#"><span>6 Comment</span></a>
-								</li>
-							</ul>
-							<div class="post-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-									nisi ut...</p>
-							</div>
-							<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
-						</div>
-					</div>
 
-					<div class="post">
-						<div class="post-img">
-							<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
-							<div class="post-category">
-								<a href="#">Branding</a>
+						<div class="post">
+							<div class="post-img">
+								<img src="https://via.placeholder.com/800x560" class="img-responsive" alt="">
+								<div class="post-category">
+									<a href="#">Branding</a>
+								</div>
 							</div>
-						</div>
-						<div class="post-content">
-							<div class="post-title">
-								<a href="#">
-									<h4>Post Title Goes Here</h4>
-								</a>
+							<div class="post-content">
+								<div class="post-title">
+									<a href="#">
+										<h4>Post Title Goes Here</h4>
+									</a>
+								</div>
+								<ul class="post-info list-unstyled">
+									<li>
+										<i class="fa fa-calendar"></i>
+										<span>10 Aug 19</span>
+									</li>
+									<li>
+										<i class="fa fa-commenting-o"></i>
+										<a href="#"><span>10 Comment</span></a>
+									</li>
+								</ul>
+								<div class="post-text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+										nisi ut...</p>
+								</div>
+								<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
 							</div>
-							<ul class="post-info list-unstyled">
-								<li>
-									<i class="fa fa-calendar"></i>
-									<span>10 Aug 19</span>
-								</li>
-								<li>
-									<i class="fa fa-commenting-o"></i>
-									<a href="#"><span>10 Comment</span></a>
-								</li>
-							</ul>
-							<div class="post-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-									nisi ut...</p>
-							</div>
-							<a href="#" class="post-more">Read more <i class="fa fa-angle-double-right"></i></a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- </section>  -->
+			</div> -->
+		<!-- </section> -->
 
 		<!-- ========== End Blog ========== -->
 
 		<!-- ========== Start Contact ========== -->
 
-		<!-- <section class="contact section pp-scrollable" id="contact">
+		<section class="contact section  pp-scrollable" id="contact">
 			<div class="container">
 				<div class="main-title">
 					<h2>Contact Me</h2>
@@ -639,7 +651,7 @@
 								<span class="icon-box"><i class="fa fa-map-marker"></i></span>
 								<h4 class="title-box">Location</h4>
 								<div class="content-box">
-									<p>NewYork, USA</p>
+									<p>Barcelona, Spain</p>
 									<p>10 Street Name</p>
 								</div>
 							</div>
@@ -647,57 +659,52 @@
 								<span class="icon-box"><i class="fa fa-envelope"></i></span>
 								<h4 class="title-box">Email</h4>
 								<div class="content-box">
-									<p>Support@example.com</p>
-									<p>Support@example.com</p>
+									<p>jvela911223@gmail.com</p>
 								</div>
 							</div>
 							<div class="contact-box">
 								<span class="icon-box"><i class="fa fa-phone"></i></span>
 								<h4 class="title-box">Phone</h4>
 								<div class="content-box">
-									<p>+1 212 410-1845</p>
-									<p>+1 212 116-2145</p>
+									<p>+34 613353955</p>
 								</div>
 							</div>
-							<div class="contact-box">
+							<!-- <div class="contact-box">
 								<span class="icon-box"><i class="fa fa-globe"></i></span>
 								<h4 class="title-box">Website</h4>
 								<div class="content-box">
 									<p>www.yourdomain.com</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="col-sm-8">
-						<form class="contact-form" action="mail.php" method="post">
+						<form class="contact-form  action-form" id="contact-form">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+								<input type="text" class="form-control" id="name" name="user_name" placeholder="Name" required>
 								<span class="input-border"></span>
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+								<input type="email" class="form-control" id="email" name="user_email" placeholder="Email" required>
 								<span class="input-border"></span>
 							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-								<span class="input-border"></span>
-							</div>
+
 							<div class="form-group">
 								<textarea class="form-control" id="message" name="message" placeholder="Your Message"
 									required></textarea>
 								<span class="input-border"></span>
 							</div>
-							<!-- Button Send Message  -->
-		<!-- <button class="contact-btn main-btn" type="submit" name="send">Send Message</button> -->
-		<!-- Form Message  -->
-		<!-- <div class="form-message text-center"><span></span></div>
+							<button class="contact-btn main-btn" type="submit" name="send">Send Message</button>
+							<div class="form-message text-center"><span></span></div>
 						</form>
 					</div>
 				</div>
 			</div>
-		</section> --> -->
+		</section>
 
 		<!-- ========== End Contact ========== -->
+
+
 
 	</div>
 
@@ -736,6 +743,8 @@
 			});
 		});
 	</script>
+
+
 </body>
 
 </html>
