@@ -1,520 +1,699 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta
+      name="keywords"
+      content="Html, Css, jQuery, JavaScript, personal, Portfolio, WebDeveploment, React, Angular, Nodejs  "
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Personal Portfolio">
-	<meta name="keywords"
-		content="Html, Css, jQuery, JavaScript, personal, Portfolio, WebDeveploment, React, Angular, Nodejs  ">
+    <!-- Title -->
+    <title>Jvela - Personal Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo/logo1.svg" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800"
+    />
 
-	<!-- Title -->
-	<title>Jvela - Personal Portfolio </title>
-	<!-- Favicon -->
-	<link rel="icon" href="images/logo/logo1.svg">
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800">
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Magnific css -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pagepiling Css -->
+    <link rel="stylesheet" href="css/jquery.pagepiling.css" />
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/main.css" />
 
-	<!-- Font Awesome Css -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Magnific css -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap Css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Pagepiling Css -->
-	<link rel="stylesheet" href="css/jquery.pagepiling.css">
-	<!-- Owl Carousel Css -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Main Style Css -->
-	<link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "t-gHncZPRi_EzybhA",
+        });
+      })();
+    </script>
+  </head>
 
-	<!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-        <script src="js/respond.min.js"></script>
-        <![endif]-->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			// https://dashboard.emailjs.com/admin/account
-			emailjs.init({
-				publicKey: "t-gHncZPRi_EzybhA",
-			});
-		})();
-	</script>
+  <body>
+    <!-- ========== Start Navbar ========== -->
 
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <!-- logo -->
+          <a class="navbar-brand" href="/"><span>j</span>vela</a>
+        </div>
+        <!-- Collect the nav links, and other content for toggling -->
+        <div class="navbar-links" id="ournavbar">
+          <!-- links -->
+          <ul class="nav navbar-nav navbar-right" id="mainMenu">
+            <li class="nav-brand text-center">
+              <a href="#"><span>J</span>vela</a>
+            </li>
+            <li>
+              <a data-menuanchor="home" class="active" href="#home"
+                ><i class="fa fa-home"></i>Home</a
+              >
+            </li>
+            <li>
+              <a data-menuanchor="about" href="#about"
+                ><i class="fa fa-user"></i>About</a
+              >
+            </li>
+            <li>
+              <a data-menuanchor="services" href="#services"
+                ><i class="fa fa-tasks"></i>Services</a
+              >
+            </li>
+            <li>
+              <a data-menuanchor="resume" href="#resume"
+                ><i class="fa fa-graduation-cap"></i>Resume</a
+              >
+            </li>
+            <li>
+              <a data-menuanchor="portfolio" href="#portfolio"
+                ><i class="fa fa-briefcase"></i>Portfolio</a
+              >
+            </li>
+            <li>
+              <a data-menuanchor="testimonials" href="#testimonials"
+                ><i class="fa fa-briefcase"></i>Testimonials</a
+              >
+            </li>
+            <!-- <li><a data-menuanchor="blog" href="#blog"><i class="fa fa-newspaper-o"></i>Blog</a></li> -->
+            <li>
+              <a data-menuanchor="contact" href="#contact"
+                ><i class="fa fa-map-marker"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</head>
+    <!-- ========== End Navbar ========== -->
 
-<body>
+    <div id="pagepiling">
+      <!-- ========== Start Home ========== -->
 
-	<!-- ========== Start Navbar ========== -->
+      <section class="section home pp-scrollable" id="home">
+        <div class="overlay">
+          <div class="container">
+            <div class="intro display-table">
+              <div class="display-table-cell">
+                <h1>Jose Vela</h1>
+                <p>I'm a <span></span></p>
+                <div class="my-btn">
+                  <a href="#contact" class="main-btn custom-btn">Contact Me</a>
+                  <a
+                    href="assets/Professional CV Resume2024.pdf"
+                    class="main-btn"
+                    target="_blank"
+                    >Download CV</a
+                  >
+                </div>
+              </div>
+              <ul class="list-unstyled text-left">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+                <li>
+                  <a href="https://www.linkedin.com/in/jose-vela-333244181/"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
 
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button class="menu-toggle">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</button>
-				<!-- logo -->
-				<a class="navbar-brand" href="/"><span>j</span>vela</a>
-			</div>
-			<!-- Collect the nav links, and other content for toggling -->
-			<div class="navbar-links" id="ournavbar">
-				<!-- links -->
-				<ul class="nav navbar-nav navbar-right" id="mainMenu">
-					<li class="nav-brand text-center"><a href="#"><span>J</span>vela</a></li>
-					<li><a data-menuanchor="home" class="active" href="#home"><i class="fa fa-home"></i>Home</a></li>
-					<li><a data-menuanchor="about" href="#about"><i class="fa fa-user"></i>About</a></li>
-					<li><a data-menuanchor="services" href="#services"><i class="fa fa-tasks"></i>Services</a></li>
-					<li><a data-menuanchor="resume" href="#resume"><i class="fa fa-graduation-cap"></i>Resume</a></li>
-					<li><a data-menuanchor="portfolio" href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-					<li><a data-menuanchor="testimonials" href="#testimonials"><i class="fa fa-briefcase"></i>Testimonials</a>
-					</li>
-					<!-- <li><a data-menuanchor="blog" href="#blog"><i class="fa fa-newspaper-o"></i>Blog</a></li> -->
-					<li><a data-menuanchor="contact" href="#contact"><i class="fa fa-map-marker"></i>Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+                <li>
+                  <a href="https://github.com/vela91"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://x.com/vela_code91"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://wa.me/34613353955"
+                    ><i class="fa fa-whatsapp"></i
+                  ></a>
+                </li>
 
-	<!-- ========== End Navbar ========== -->
+                <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<div id="pagepiling">
+      <!-- ========== End Home ========== -->
 
-		<!-- ========== Start Home ========== -->
+      <!-- ========== Start About Me ========== -->
 
-		<section class="section home pp-scrollable" id="home">
-			<div class="overlay">
-				<div class="container">
-					<div class="intro display-table">
-						<div class="display-table-cell">
-							<h1>Jose Vela</h1>
-							<p>I'm a <span></span></p>
-							<div class="my-btn">
-								<a href="#contact" class="main-btn custom-btn">Contact Me</a>
-								<a href="/assets/Professional CV Resume.pdf" class="main-btn" target="_blank">Download CV</a>
-							</div>
-						</div>
-						<ul class="list-unstyled text-left">
-							<!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-							<li><a href="https://www.linkedin.com/in/jose-vela-333244181/"><i class="fa fa-linkedin"></i></a></li>
-
-							<li><a href="https://github.com/vela91"><i class="fa fa-github"></i></a></li>
-							<li><a href="https://x.com/vela_code91"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://wa.me/34613353955"><i class="fa fa-whatsapp"></i></a></li>
-
-							<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-							<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ========== End Home ========== -->
-
-		<!-- ========== Start About Me ========== -->
-
-		<section class="about-me section pp-scrollable" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-6">
-						<div class="about-image">
-							<img class="img-responsive" src="images/portfolio/photo_2024-06-03_10-21-12.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-7 col-md-6">
-						<div class="about-info">
-							<div class="main-title">
-								<h2>About Me</h2>
-							</div>
-							<h3>I am Jose Vela</h3>
-							<h5>I am a Full-Stack Web Developer</h5>
-							<p>Passionate about tackling challenges and development, I am an engineer with a robust background in both
-								frontend and
-								backend technologies. I excel in optimizing production processes and creating efficient, interactive
-								user interfaces. My
-								disciplined approach ensures consistent and innovative results.</p>
-							<div class="personal-info">
-								<div class="row">
-									<div class="col-xs-6 info-block">
-										<p>Name: <span>Jose Vela</span></p>
-									</div>
-									<div class="col-xs-6 info-block">
-										<p>Age: <span>32</span></p>
-									</div>
-									<div class="col-xs-6 info-block">
-										<p>Phone: <span>+34 613353955</span></p>
-									</div>
-									<div class="col-xs-6 info-block">
-										<p>Address: <span>Barcelona, Spain</span></p>
-									</div>
-									<!-- <div class="col-xs-6 info-block">
+      <section class="about-me section pp-scrollable" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="about-image">
+                <img
+                  class="img-responsive"
+                  src="images/portfolio/photo_2024-06-03_10-21-12.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="about-info">
+                <div class="main-title">
+                  <h2>About Me</h2>
+                </div>
+                <h3>I am Jose Vela</h3>
+                <h5>I am a Full-Stack Web Developer</h5>
+                <p>
+                  Passionate about tackling challenges and development, I am an
+                  engineer with a robust background in both frontend and backend
+                  technologies. I excel in optimizing production processes and
+                  creating efficient, interactive user interfaces. My
+                  disciplined approach ensures consistent and innovative
+                  results.
+                </p>
+                <div class="personal-info">
+                  <div class="row">
+                    <div class="col-xs-6 info-block">
+                      <p>Name: <span>Jose Vela</span></p>
+                    </div>
+                    <div class="col-xs-6 info-block">
+                      <p>Age: <span>32</span></p>
+                    </div>
+                    <div class="col-xs-6 info-block">
+                      <p>Phone: <span>+34 613353955</span></p>
+                    </div>
+                    <div class="col-xs-6 info-block">
+                      <p>Address: <span>Barcelona, Spain</span></p>
+                    </div>
+                    <!-- <div class="col-xs-6 info-block">
 										<p>WebSite: <span>example.com</span></p>
 									</div> -->
-									<div class="col-xs-6 info-block">
-										<p>Email: <span>jvela911223@gmail.com</span></p>
-									</div>
-								</div>
-							</div>
-							<a href="assets/Professional CV Resume.pdf" class="main-btn" target="_blank">Download CV</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                    <div class="col-xs-6 info-block">
+                      <p>Email: <span>jvela911223@gmail.com</span></p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="assets/Professional CV Resume.pdf"
+                  class="main-btn"
+                  target="_blank"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- ========== End About Me ========== -->
+      <!-- ========== End About Me ========== -->
 
-		<!-- ========== Start Services ========== -->
+      <!-- ========== Start Services ========== -->
 
-		<section class="services section pp-scrollable" id="services">
-			<div class="container">
-				<div class="main-title">
-					<h2>My Services</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-pencil fa-lg"></i>
-							</div>
-							<h4>Custom Website Development</h4>
-							<p>Building tailored websites that meet the unique needs of clients, using the latest technologies and web
-								standards.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-flag fa-lg"></i>
-							</div>
-							<h4>Web Application Development</h4>
-							<p>Designing and developing interactive and functional web applications to enhance user experience and
-								achieve business
-								goals.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-laptop fa-lg"></i>
-							</div>
-							<h4>Responsive and Adaptive Design</h4>
-							<p>Creating websites that provide optimal viewing experiences across a wide range of devices, from desktop
-								computers to
-								mobile phones.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-briefcase fa-lg"></i>
-							</div>
-							<h4>E-commerce Solutions</h4>
-							<p>Developing robust e-commerce platforms with secure payment gateways, inventory management, and
-								user-friendly shopping
-								experiences.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-code fa-lg"></i>
-							</div>
-							<h4>Content Management System (CMS) Integration</h4>
-							<p>Integrating and customizing CMS platforms like WordPress, Joomla, or Drupal to allow clients easy
-								management of their
-								website content.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="service">
-							<div class="service-icon">
-								<i class="fa fa-support fa-lg"></i>
-							</div>
-							<h4>Website Maintenance and Support
-							</h4>
-							<p>Providing ongoing website maintenance, updates, and technical support to ensure optimal performance and
-								security.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <section class="services section pp-scrollable" id="services">
+        <div class="container">
+          <div class="main-title">
+            <h2>My Services</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-pencil fa-lg"></i>
+                </div>
+                <h4>Custom Website Development</h4>
+                <p>
+                  Building tailored websites that meet the unique needs of
+                  clients, using the latest technologies and web standards.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-flag fa-lg"></i>
+                </div>
+                <h4>Web Application Development</h4>
+                <p>
+                  Designing and developing interactive and functional web
+                  applications to enhance user experience and achieve business
+                  goals.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-laptop fa-lg"></i>
+                </div>
+                <h4>Responsive and Adaptive Design</h4>
+                <p>
+                  Creating websites that provide optimal viewing experiences
+                  across a wide range of devices, from desktop computers to
+                  mobile phones.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-briefcase fa-lg"></i>
+                </div>
+                <h4>E-commerce Solutions</h4>
+                <p>
+                  Developing robust e-commerce platforms with secure payment
+                  gateways, inventory management, and user-friendly shopping
+                  experiences.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-code fa-lg"></i>
+                </div>
+                <h4>Content Management System (CMS) Integration</h4>
+                <p>
+                  Integrating and customizing CMS platforms like WordPress,
+                  Joomla, or Drupal to allow clients easy management of their
+                  website content.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="service">
+                <div class="service-icon">
+                  <i class="fa fa-support fa-lg"></i>
+                </div>
+                <h4>Website Maintenance and Support</h4>
+                <p>
+                  Providing ongoing website maintenance, updates, and technical
+                  support to ensure optimal performance and security.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- ========== End Services ========== -->
+      <!-- ========== End Services ========== -->
 
-		<!-- ========== Start Resume ========== -->
+      <!-- ========== Start Resume ========== -->
 
-		<section class="resume section pp-scrollable" id="resume">
-			<div class="container">
-				<div class="main-title">
-					<h2>My Resume</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="timeline">
-							<ul class="list-unstyled">
-								<li>
-									<div class="timeline-content">
-										<div class="timeline-icon"><i class="fa fa-suitcase"></i></div>
-										<h4>Supervised Machine Learning: Regression and Classification</h4>
-										<p><i class="fa fa-calendar"></i>2022 - 2022 | Stanford </p>
-										<p class="text">In the "Supervised Machine Learning: Regression and Classification" course, I gained
-											comprehensive knowledge of key
-											machine learning techniques used for regression and classification tasks. I learned to implement
-											and evaluate models,
-											understand overfitting and underfitting, and apply techniques such as linear regression, logistic
-											regression, and
-											decision trees. The course also covered performance metrics, model selection, and hyperparameter
-											tuning to optimize
-											predictive accuracy.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="timeline-content">
-										<div class="timeline-icon"><i class="fa fa-suitcase"></i></div>
-										<h4>Advanced React </h4>
-										<p><i class="fa fa-calendar"></i>2022 - 2022 | META</p>
-										<p class="text">In the "Advanced React" course by Meta on Coursera, I deepened my understanding of
-											React by exploring advanced concepts
-											such as state management, context API, and performance optimization. I learned to build complex,
-											scalable applications
-											using hooks, and mastered techniques for handling side effects and asynchronous data fetching. The
-											course also covered
-											testing React components and best practices for maintaining clean and efficient codebases.</p>
-									</div>
-								</li>
+      <section class="resume section pp-scrollable" id="resume">
+        <div class="container">
+          <div class="main-title">
+            <h2>My Resume</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="timeline">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="timeline-content">
+                      <div class="timeline-icon">
+                        <i class="fa fa-suitcase"></i>
+                      </div>
+                      <h4>Supervised Machine Specialization.</h4>
+                      <p>
+                        <i class="fa fa-calendar"></i>2022 - 2022 | Stanford
+                      </p>
+                      <p class="text">
+                        A Stanford specialization in Supervised Machine Learning
+                        delves into advanced techniques and algorithms for
+                        building models that learn from labeled data. You'll
+                        master theoretical foundations, key algorithms, model
+                        evaluation, and practical applications, gaining
+                        expertise in using tools like Python, TensorFlow, and
+                        PyTorch. This program is ideal for researchers, data
+                        engineers, data scientists, or anyone passionate about
+                        developing practical skills in this growing field.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <div class="timeline-icon">
+                        <i class="fa fa-suitcase"></i>
+                      </div>
+                      <h4>Advanced React</h4>
+                      <p><i class="fa fa-calendar"></i>2022 - 2022 | META</p>
+                      <p class="text">
+                        In the "Advanced React" course by Meta on Coursera, I
+                        deepened my understanding of React by exploring advanced
+                        concepts such as state management, context API, and
+                        performance optimization. I learned to build complex,
+                        scalable applications using hooks, and mastered
+                        techniques for handling side effects and asynchronous
+                        data fetching. The course also covered testing React
+                        components and best practices for maintaining clean and
+                        efficient codebases.
+                      </p>
+                    </div>
+                  </li>
 
-								<li>
-									<div class="timeline-content">
-										<div class="timeline-icon"><i class="fa fa-suitcase"></i></div>
-										<h4>Automatizacion, Informatica Industrial</h4>
-										<p><i class="fa fa-calendar"></i>2022 - 2023 | Aula21</p>
-										<p class="text">During my postgraduate studies in Automation and Industrial Informatics, I acquired
-											advanced skills in designing and
-											implementing automated control systems. I learned to integrate hardware and software components
-											for industrial
-											applications, focusing on PLC programming, SCADA systems, and industrial networks. My education
-											also included
-											proficiency in real-time data processing, sensor integration, and the use of advanced techniques
-											for industrial
-											automation. Additionally, I developed strong analytical and problem-solving skills, essential for
-											optimizing and
-											maintaining complex industrial processes.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="timeline-content">
-										<div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
-										<h4>Automatic engineer</h4>
-										<p><i class="fa fa-calendar"></i>2011 - 2016 | UCLV</p>
-										<p class="text">As a Automatic Engineer, I gained extensive knowledge in low-level programming,
-											particularly with microprocessors. My
-											education emphasized proficiency in languages such as C, C++, and C#, enabling me to write
-											efficient and optimized code
-											for hardware interfaces and embedded systems. I developed skills in system-level programming,
-											memory management, and
-											performance optimization, which are crucial for developing robust and high-performance
-											applications.</p>
-									</div>
-								</li>
-								<li>
-									<div class="timeline-content">
-										<div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
-										<h4>Intermediate Technician in Computer Science</h4>
-										<p><i class="fa fa-calendar"></i>2006 - 2009 | IPI Lazaro Cardenas</p>
-										<p class="text">I learned programming logic and object-oriented programming using Pascal, focusing
-											on algorithm development and
-											efficient problem-solving.
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                  <li>
+                    <div class="timeline-content">
+                      <div class="timeline-icon">
+                        <i class="fa fa-suitcase"></i>
+                      </div>
+                      <h4>Automatizacion, Informatica Industrial</h4>
+                      <p><i class="fa fa-calendar"></i>2022 - 2023 | Aula21</p>
+                      <p class="text">
+                        During my postgraduate studies in Automation and
+                        Industrial Informatics, I acquired advanced skills in
+                        designing and implementing automated control systems. I
+                        learned to integrate hardware and software components
+                        for industrial applications, focusing on PLC
+                        programming, SCADA systems, and industrial networks. My
+                        education also included proficiency in real-time data
+                        processing, sensor integration, and the use of advanced
+                        techniques for industrial automation. Additionally, I
+                        developed strong analytical and problem-solving skills,
+                        essential for optimizing and maintaining complex
+                        industrial processes.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <div class="timeline-icon">
+                        <i class="fa fa-graduation-cap"></i>
+                      </div>
+                      <h4>Automatic engineer</h4>
+                      <p><i class="fa fa-calendar"></i>2011 - 2016 | UCLV</p>
+                      <p class="text">
+                        As a Automatic Engineer, I gained extensive knowledge in
+                        low-level programming, particularly with
+                        microprocessors. My education emphasized proficiency in
+                        languages such as C, C++, and C#, enabling me to write
+                        efficient and optimized code for hardware interfaces and
+                        embedded systems. I developed skills in system-level
+                        programming, memory management, and performance
+                        optimization, which are crucial for developing robust
+                        and high-performance applications.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <div class="timeline-icon">
+                        <i class="fa fa-graduation-cap"></i>
+                      </div>
+                      <h4>Intermediate Technician in Computer Science</h4>
+                      <p>
+                        <i class="fa fa-calendar"></i>2006 - 2009 | IPI Lazaro
+                        Cardenas
+                      </p>
+                      <p class="text">
+                        I learned programming logic and object-oriented
+                        programming using Pascal, focusing on algorithm
+                        development and efficient problem-solving.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- ========== End Resume ========== -->
+      <!-- ========== End Resume ========== -->
 
-		<!-- ========== Start Portfolio ========== -->
+      <!-- ========== Start Portfolio ========== -->
 
-		<section class="portfolio section pp-scrollable" id="portfolio">
-			<div class="container">
-				<div class="main-title">
-					<h2>My Portfolio</h2>
-				</div>
-				<div class="filter-menu">
-					<ul id="control" class="list-filter list-unstyled">
-						<li class="active" data-filter="all">All</li>
-						<li data-filter="1">Web Development</li>
-						<!-- <li data-filter="2">Graphic Design</li>
+      <section class="portfolio section pp-scrollable" id="portfolio">
+        <div class="container">
+          <div class="main-title">
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="filter-menu">
+            <ul id="control" class="list-filter list-unstyled">
+              <li class="active" data-filter="all">All</li>
+              <li data-filter="1">Web Development</li>
+              <!-- <li data-filter="2">Graphic Design</li>
 						<li data-filter="3">Branding</li> -->
-					</ul>
-				</div>
-				<div class="portfolio-content">
-					<div id="filtr-container" class="row">
-						<div class="col-md-4 col-sm-6 filtr-item" data-category="1" data-sort="value">
-							<div class="item">
-								<img class="img-responsive" src="images/portfolio/barber.png" alt="Barber" height="600" width="600">
-								<div class="overlay">
-									<h4 class="item-title">BarberShop J&R</h4>
-									<div class="item-category">
-										<span>Web Development</span>
-									</div>
-									<div class="item-icons">
-										<a class="icon-img" href="images/portfolio/barber.png" title="view"><i
-												class="fa fa-search-plus"></i></a>
-										<a href="https://dc-jrbarbershop.pages.dev/" target="_blank"><i class="fa fa-link"
-												title="project link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 filtr-item" data-category="1" data-sort="value">
-							<div class="item">
-								<img class="img-responsive" src="images/portfolio/menu.png" alt="menu" width="600" height="600">
-								<div class="overlay">
-									<h4 class="item-title">Beach Menu</h4>
-									<div class="item-category">
-										<span>Web Development</span>
-									</div>
-									<div class="item-icons">
-										<a class="icon-img" href="images/portfolio/menu.png" title="view"><i
-												class="fa fa-search-plus"></i></a>
-										<a href="https://beach-menu.comiral.com/" target="_blank"><i class="fa fa-link"
-												title="project link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 filtr-item" data-category="1" data-sort="value">
-							<div class="item">
-								<img class="img-responsive" src="images/portfolio/comiral.png" alt="">
-								<div class="overlay">
-									<h4 class="item-title">Comiral WebSite</h4>
-									<div class="item-category">
-										<span>landing page</span>
-									</div>
-									<div class="item-icons">
-										<a class="icon-img" href="images/portfolio/comiral.png" title="view"><i
-												class="fa fa-search-plus"></i></a>
-										<a href="https://comiral.com/" target="_blank"><i class="fa fa-link" title="project link"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            </ul>
+          </div>
+          <div class="portfolio-content">
+            <div id="filtr-container" class="row">
+              <div
+                class="col-md-4 col-sm-6 filtr-item"
+                data-category="1"
+                data-sort="value"
+              >
+                <div class="item">
+                  <img
+                    class="img-responsive"
+                    src="images/portfolio/barber.png"
+                    alt="Barber"
+                    height="600"
+                    width="600"
+                  />
+                  <div class="overlay">
+                    <h4 class="item-title">BarberShop J&R</h4>
+                    <div class="item-category">
+                      <span>Web Development</span>
+                    </div>
+                    <div class="item-icons">
+                      <a
+                        class="icon-img"
+                        href="images/portfolio/barber.png"
+                        title="view"
+                        ><i class="fa fa-search-plus"></i
+                      ></a>
+                      <a
+                        href="https://dc-jrbarbershop.pages.dev/"
+                        target="_blank"
+                        ><i class="fa fa-link" title="project link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-sm-6 filtr-item"
+                data-category="1"
+                data-sort="value"
+              >
+                <div class="item">
+                  <img
+                    class="img-responsive"
+                    src="images/portfolio/menu.png"
+                    alt="menu"
+                    width="600"
+                    height="600"
+                  />
+                  <div class="overlay">
+                    <h4 class="item-title">Beach Menu</h4>
+                    <div class="item-category">
+                      <span>Web Development</span>
+                    </div>
+                    <div class="item-icons">
+                      <a
+                        class="icon-img"
+                        href="images/portfolio/menu.png"
+                        title="view"
+                        ><i class="fa fa-search-plus"></i
+                      ></a>
+                      <a href="https://beach-menu.comiral.com/" target="_blank"
+                        ><i class="fa fa-link" title="project link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 col-sm-6 filtr-item"
+                data-category="1"
+                data-sort="value"
+              >
+                <div class="item">
+                  <img
+                    class="img-responsive"
+                    src="images/portfolio/comiral.png"
+                    alt=""
+                  />
+                  <div class="overlay">
+                    <h4 class="item-title">Comiral WebSite</h4>
+                    <div class="item-category">
+                      <span>landing page</span>
+                    </div>
+                    <div class="item-icons">
+                      <a
+                        class="icon-img"
+                        href="images/portfolio/comiral.png"
+                        title="view"
+                        ><i class="fa fa-search-plus"></i
+                      ></a>
+                      <a href="https://comiral.com/" target="_blank"
+                        ><i class="fa fa-link" title="project link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="testimonials section pp-scrollable" id="testimonials">
+        <div class="container">
+          <div class="main-title">
+            <h2>Testimonials</h2>
+          </div>
 
+          <div class="row">
+            <div class="col-md-12 owl-carousel owl-theme">
+              <!-- New Item -->
+              <div class="testimonial-box">
+                <div class="client-pic">
+                  <img src="/images/testimonials/chicho.enc" alt="client" />
+                </div>
+                <div class="client-details">
+                  <h6>Alejandro Sanchez</h6>
+                  <span>Web Developer</span>
+                </div>
+                <div class="description">
+                  <span class="quote-left"
+                    ><i class="fa fa-quote-left"></i
+                  ></span>
+                  <span class="quote-right"
+                    ><i class="fa fa-quote-right"></i
+                  ></span>
+                  <p>
+                    "Working with Jose Vela has been an outstanding experience.
+                    His expertise in web development, especially in JavaScript
+                    and front-end frameworks, has consistently driven our
+                    projects to success. José's ability to write clean,
+                    efficient code and his proactive problem-solving skills make
+                    him an invaluable team member."
+                  </p>
+                </div>
+              </div>
+              <!-- New Item -->
+              <div class="testimonial-box">
+                <div class="client-pic">
+                  <img src="images/testimonials/file.enc" alt="client" />
+                </div>
+                <div class="client-details">
+                  <h6>Eddy Lima</h6>
+                  <span>AWS Engineer</span>
+                </div>
+                <div class="description">
+                  <span class="quote-left"
+                    ><i class="fa fa-quote-left"></i
+                  ></span>
+                  <span class="quote-right"
+                    ><i class="fa fa-quote-right"></i
+                  ></span>
+                  <p>
+                    "Jose Vela is a highly skilled web programmer who excels in
+                    creating robust and scalable web applications. His deep
+                    understanding of both client-side and server-side
+                    technologies ensures seamless integration and smooth
+                    performance. José's dedication to staying updated with the
+                    latest web technologies is truly commendable."
+                  </p>
+                </div>
+              </div>
+              <!-- New Item -->
+              <div class="testimonial-box">
+                <div class="client-pic">
+                  <img src="images/testimonials/ailan.enc" alt="client" />
+                </div>
+                <div class="client-details">
+                  <h6>Ailan Alcantara</h6>
+                  <span>Full Stack Developer</span>
+                </div>
+                <div class="description">
+                  <span class="quote-left"
+                    ><i class="fa fa-quote-left"></i
+                  ></span>
+                  <span class="quote-right"
+                    ><i class="fa fa-quote-right"></i
+                  ></span>
+                  <p>
+                    "I've had the pleasure of working with Jose Vela on multiple
+                    web development projects. His proficiency in HTML, CSS, and
+                    JavaScript, combined with his knack for optimizing
+                    performance, has significantly improved our website's user
+                    experience. Jose's collaborative approach and attention to
+                    detail are key assets to any development team."
+                  </p>
+                </div>
+              </div>
+              <!-- New Item -->
+              <div class="testimonial-box">
+                <div class="client-pic">
+                  <img src="/images/testimonials/luis.jpeg" alt="client" />
+                </div>
+                <div class="client-details">
+                  <h6>Luis Ernesto Cabrera</h6>
+                  <span>UX/UI Designer</span>
+                </div>
+                <div class="description">
+                  <span class="quote-left"
+                    ><i class="fa fa-quote-left"></i
+                  ></span>
+                  <span class="quote-right"
+                    ><i class="fa fa-quote-right"></i
+                  ></span>
+                  <p>
+                    "As a designer, collaborating with Jose Vela has been a
+                    seamless and productive experience. His ability to translate
+                    design concepts into fully functional and responsive web
+                    pages is exceptional. José's meticulous attention to detail
+                    and commitment to delivering high-quality results ensure
+                    that our designs not only look great but also function
+                    perfectly across all devices."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- ========== End Testimonials ========== -->
 
+      <!-- ========== Start Blog ========== -->
 
-
-		<section class="testimonials section pp-scrollable" id="testimonials">
-			<div class="container">
-				<div class="main-title">
-					<h2>Testimonials</h2>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12 owl-carousel owl-theme">
-						<!-- New Item -->
-						<div class="testimonial-box">
-							<div class="client-pic">
-								<img src="/images/testimonials/chicho.enc" alt="client">
-							</div>
-							<div class="client-details">
-								<h6> Alejandro Sanchez</h6>
-								<span>Web Developer</span>
-							</div>
-							<div class="description">
-								<span class="quote-left"><i class="fa fa-quote-left"></i></span>
-								<span class="quote-right"><i class="fa fa-quote-right"></i></span>
-								<p>"Working with Jose Vela has been an outstanding experience. His expertise in web development,
-									especially in JavaScript and front-end frameworks, has consistently driven our projects to success.
-									José's ability to write clean, efficient code and his proactive problem-solving skills make him an
-									invaluable team member."</p>
-							</div>
-						</div>
-						<!-- New Item -->
-						<div class="testimonial-box">
-							<div class="client-pic">
-								<img src="images/testimonials/file.enc" alt="client">
-							</div>
-							<div class="client-details">
-								<h6> Eddy Lima </h6>
-								<span>AWS Engineer</span>
-							</div>
-							<div class="description">
-								<span class="quote-left"><i class="fa fa-quote-left"></i></span>
-								<span class="quote-right"><i class="fa fa-quote-right"></i></span>
-								<p>"Jose Vela is a highly skilled web programmer who excels in creating robust and scalable web
-									applications. His deep understanding of both client-side and server-side technologies ensures seamless
-									integration and smooth performance. José's dedication to staying updated with the latest web
-									technologies is truly commendable."</p>
-							</div>
-						</div>
-						<!-- New Item -->
-						<div class="testimonial-box">
-							<div class="client-pic">
-								<img src="images/testimonials/ailan.enc" alt="client">
-							</div>
-							<div class="client-details">
-								<h6> Ailan Alcantara </h6>
-								<span>Full Stack Developer</span>
-							</div>
-							<div class="description">
-								<span class="quote-left"><i class="fa fa-quote-left"></i></span>
-								<span class="quote-right"><i class="fa fa-quote-right"></i></span>
-								<p>"I've had the pleasure of working with Jose Vela on multiple web development projects. His
-									proficiency in HTML, CSS, and JavaScript, combined with his knack for optimizing performance, has
-									significantly improved our website's user experience. Jose's collaborative approach and attention to
-									detail are key assets to any development team."</p>
-							</div>
-						</div>
-						<!-- New Item -->
-						<div class="testimonial-box">
-							<div class="client-pic">
-								<img src="/images/testimonials/luis.jpeg" alt="client">
-							</div>
-							<div class="client-details">
-								<h6> Luis Ernesto Cabrera </h6>
-								<span>UX/UI Designer</span>
-							</div>
-							<div class="description">
-								<span class="quote-left"><i class="fa fa-quote-left"></i></span>
-								<span class="quote-right"><i class="fa fa-quote-right"></i></span>
-								<p>"As a designer, collaborating with Jose Vela has been a seamless and productive experience. His
-									ability to translate design concepts into fully functional and responsive web pages is exceptional.
-									José's meticulous attention to detail and commitment to delivering high-quality results ensure that
-									our designs not only look great but also function perfectly across all devices."</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ========== End Testimonials ========== -->
-
-		<!-- ========== Start Blog ========== -->
-
-		<!-- <section class="blog section " id="blog">
+      <!-- <section class="blog section " id="blog">
 			<!-- <div class="container">
 				<div class="main-title">
 					<h2>My Blog</h2>
@@ -621,117 +800,154 @@
 					</div>
 				</div>
 			</div> -->
-		<!-- </section> -->
+      <!-- </section> -->
 
-		<!-- ========== End Blog ========== -->
+      <!-- ========== End Blog ========== -->
 
-		<!-- ========== Start Contact ========== -->
+      <!-- ========== Start Contact ========== -->
 
-		<section class="contact section  pp-scrollable" id="contact">
-			<div class="container">
-				<div class="main-title">
-					<h2>Contact Me</h2>
-				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="contact-boxes">
-							<div class="contact-box">
-								<span class="icon-box"><i class="fa fa-map-marker"></i></span>
-								<h4 class="title-box">Location</h4>
-								<div class="content-box">
-									<p>Barcelona, Spain</p>
-								</div>
-							</div>
-							<div class="contact-box">
-								<span class="icon-box"><i class="fa fa-envelope"></i></span>
-								<h4 class="title-box">Email</h4>
-								<div class="content-box">
-									<p>jvela911223@gmail.com</p>
-								</div>
-							</div>
-							<div class="contact-box">
-								<span class="icon-box"><i class="fa fa-phone"></i></span>
-								<h4 class="title-box">Phone</h4>
-								<div class="content-box">
-									<p>+34 613353955</p>
-								</div>
-							</div>
-							<!-- <div class="contact-box">
+      <section class="contact section pp-scrollable" id="contact">
+        <div class="container">
+          <div class="main-title">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="contact-boxes">
+                <div class="contact-box">
+                  <span class="icon-box"><i class="fa fa-map-marker"></i></span>
+                  <h4 class="title-box">Location</h4>
+                  <div class="content-box">
+                    <p>Barcelona, Spain</p>
+                  </div>
+                </div>
+                <div class="contact-box">
+                  <span class="icon-box"><i class="fa fa-envelope"></i></span>
+                  <h4 class="title-box">Email</h4>
+                  <div class="content-box">
+                    <p>jvela911223@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-box">
+                  <span class="icon-box"><i class="fa fa-phone"></i></span>
+                  <h4 class="title-box">Phone</h4>
+                  <div class="content-box">
+                    <p>+34 613353955</p>
+                  </div>
+                </div>
+                <!-- <div class="contact-box">
 								<span class="icon-box"><i class="fa fa-globe"></i></span>
 								<h4 class="title-box">Website</h4>
 								<div class="content-box">
 									<p>www.yourdomain.com</p>
 								</div>
 							</div> -->
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<form class="contact-form  action-form" id="contact-form">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="user_name" placeholder="Name" required>
-								<span class="input-border"></span>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="user_email" placeholder="Email" required>
-								<span class="input-border"></span>
-							</div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <form class="contact-form action-form" id="contact-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                  />
+                  <span class="input-border"></span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="user_email"
+                    placeholder="Email"
+                    required
+                  />
+                  <span class="input-border"></span>
+                </div>
 
-							<div class="form-group">
-								<textarea class="form-control" id="message" name="message" placeholder="Your Message"
-									required></textarea>
-								<span class="input-border"></span>
-							</div>
-							<button class="contact-btn main-btn" type="submit" name="send">Send Message</button>
-							<div class="form-message text-center"><span></span></div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <span class="input-border"></span>
+                </div>
+                <button class="contact-btn main-btn" type="submit" name="send">
+                  Send Message
+                </button>
+                <div class="form-message text-center"><span></span></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- ========== End Contact ========== -->
+      <!-- ========== End Contact ========== -->
+    </div>
 
+    <!-- ========== Js ========== -->
 
-
-	</div>
-
-	<!-- ========== Js ========== -->
-
-	<!-- jQuery -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<!-- Pagepiling Js -->
-	<script src="js/jquery.pagepiling.js"></script>
-	<!-- Bootstrap Js -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Typed Js -->
-	<script src="js/typed.js"></script>
-	<!-- Owl Carousel Js -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- filterizr JS file -->
-	<script src="js/jquery.filterizr.js"></script>
-	<!-- Magnific Popup JS  -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- Custom Js -->
-	<script src="js/custom.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#pagepiling').pagepiling({
-				menu: '#myMenu',
-				normalScrollElements: null,
-				anchors: ['home', 'about', 'services', 'resume', 'portfolio', 'testimonials', 'contact'],
-				sectionsColor: ['#263446', '#2b3d4f', '#263446', '#2b3d4f', '#263446'],
-				keyboardScrolling: false,
-				navigation: {
-					'textColor': '#16c0f0',
-					'bulletsColor': '#16c0f0',
-					'position': 'right',
-					'tooltips': ['Home', 'About', 'Services', 'Resume', 'Portfolio', 'Testimonials', 'Contact']
-				}
-			});
-		});
-	</script>
-
-
-</body>
-
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Pagepiling Js -->
+    <script src="js/jquery.pagepiling.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Typed Js -->
+    <script src="js/typed.js"></script>
+    <!-- Owl Carousel Js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- filterizr JS file -->
+    <script src="js/jquery.filterizr.js"></script>
+    <!-- Magnific Popup JS  -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: "#myMenu",
+          normalScrollElements: null,
+          anchors: [
+            "home",
+            "about",
+            "services",
+            "resume",
+            "portfolio",
+            "testimonials",
+            "contact",
+          ],
+          sectionsColor: [
+            "#263446",
+            "#2b3d4f",
+            "#263446",
+            "#2b3d4f",
+            "#263446",
+          ],
+          keyboardScrolling: false,
+          navigation: {
+            textColor: "#16c0f0",
+            bulletsColor: "#16c0f0",
+            position: "right",
+            tooltips: [
+              "Home",
+              "About",
+              "Services",
+              "Resume",
+              "Portfolio",
+              "Testimonials",
+              "Contact",
+            ],
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
